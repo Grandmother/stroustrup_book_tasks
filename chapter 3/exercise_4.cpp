@@ -2,10 +2,10 @@
 
 int main()
 {
-    int val1 = 0;
-    int val2 = 0;
+    double val1 = 0;
+    double val2 = 0;
 
-    std::cout << "Enter two integer values please: ";
+    std::cout << "Enter two float point values please: ";
     std::cin >> val1 >> val2;
 
     if ( val1 < val2 )
