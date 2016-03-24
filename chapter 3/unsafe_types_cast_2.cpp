@@ -5,9 +5,9 @@ int main()
     double d = 0;
     while (std::cin >> d)
     {
-        int i = d;
-        char c = i;
-        int i2 = c;
+        int i {d};
+        char c {i};
+        int i2 {c};
 
         std::cout << "d == " << d << '\n'
             << "i == " << i << '\n'
