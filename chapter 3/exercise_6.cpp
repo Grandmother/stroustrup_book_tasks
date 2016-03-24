@@ -3,7 +3,7 @@
 int main()
 {
     std::cout << "Enter three numbers please: ";
-    int a, b, c;
+    std::string a, b, c;
     std::cin >> a >> b >> c;
 
     if ( a > b )
