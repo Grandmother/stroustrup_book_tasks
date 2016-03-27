@@ -12,16 +12,16 @@ int main()
         {
             if ( b > c )
             {
-                std::cout << a << ' ' << b << ' ' << c << ";\n";
+                std::cout << a << ', ' << b << ', ' << c << ";\n";
             }
             else
             {
-                std::cout << a << ' ' << c << ' ' << b << ";\n";
+                std::cout << a << ', ' << c << ', ' << b << ";\n";
             }
         }
         else
         {
-                std::cout << c << ' ' << a << ' ' << b << ";\n";
+                std::cout << c << ', ' << a << ', ' << b << ";\n";
         }
     }
     else
@@ -30,16 +30,16 @@ int main()
         {
             if ( b < c )
             {
-                std::cout << c << ' ' << b << ' ' << a << ";\n";
+                std::cout << c << ', ' << b << ', ' << a << ";\n";
             }
             else
             {
-                std::cout << b << ' ' << c << ' ' << a << ";\n";
+                std::cout << b << ', ' << c << ', ' << a << ";\n";
             }
         }
         else
         {
-            std::cout << b << ' ' << a << ' ' << c << ";\n";
+            std::cout << b << ', ' << a << ', ' << c << ";\n";
         }
     }
     return 0;
