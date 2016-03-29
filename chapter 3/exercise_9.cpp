@@ -3,10 +3,10 @@
 int main()
 {
     std::string number = " ";
-    std::cout << "\nEnter the numerals please: ";
+    std::cout << "Enter the numerals please: ";
     while( std::cin >> number )
     {
-        if ( number == "zero\n" )
+        if ( number == "zero" )
         {
             std::cout << "0\n";
         }
