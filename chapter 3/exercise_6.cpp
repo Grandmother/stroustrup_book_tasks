@@ -12,9 +12,19 @@ int main()
         a = c;
         c = tmp;
     }
-    if ( c > b )
+    if ( b > c )
     {
         tmp = c;
-
+        c = b;
+        b = tmp;
     }
+    if ( a > b )
+    {
+        tmp = b;
+        b = a;
+        a = tmp;
+    }
+    std::cout << a << ' ' << b << ' ' << c << '\n';
+
+    return 0;
 }
