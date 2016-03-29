@@ -3,44 +3,18 @@
 int main()
 {
     std::cout << "Enter three numbers please: ";
-    std::string a, b, c;
+    std::string a, b, c, tmp;
     std::cin >> a >> b >> c;
 
-    if ( a > b )
+    if ( a > c )
     {
-        if ( a > c )
-        {
-            if ( b > c )
-            {
-                std::cout << a << ' ' << b << ' ' << c << ";\n";
-            }
-            else
-            {
-                std::cout << a << ' ' << c << ' ' << b << ";\n";
-            }
-        }
-        else
-        {
-                std::cout << c << ' ' << a << ' ' << b << ";\n";
-        }
+        tmp = a;
+        a = c;
+        c = tmp;
     }
-    else
+    if ( c > b )
     {
-        if ( a < c )
-        {
-            if ( b < c )
-            {
-                std::cout << c << ' ' << b << ' ' << a << ";\n";
-            }
-            else
-            {
-                std::cout << b << ' ' << c << ' ' << a << ";\n";
-            }
-        }
-        else
-        {
-            std::cout << b << ' ' << a << ' ' << c << ";\n";
-        }
+        tmp = c;
+
     }
-    return 0;
 }
