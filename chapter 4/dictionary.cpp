@@ -10,6 +10,7 @@ using namespace std;
 int main()
 {
     vector<string> dictionary;
+    string censor = "acrobat";
 
     cout << "Enter some words to dictionary:\n";
     for ( string temp ; cin >> temp; )
@@ -21,7 +22,11 @@ int main()
     cout << "\n\nWords in dictionary:\n";
     for ( int i = 0; i < dictionary.size(); ++i )
     {
-        if ( i == 0 || dictionary[i-1] != dictionary[i] )
+        if ( dictionary[i] == censor )
+        {
+            cout << "BEEP" << '\n';
+        }
+        else if ( i == 0 || dictionary[i-1] != dictionary[i])
         {
             cout << dictionary[i] << '\n';
         }
