@@ -16,12 +16,20 @@ int main()
         {
             cout << first << " is least.\n";
             cout << second << " is most.\n";
+            if ( second - first < 0.1 )
+            {
+                cout << "But they are almost equal. Difference is: " << second - first << '\n';
+            }
 
         }
         else if ( second < first )
         {
             cout << second << " is least.\n";
             cout << first << " is most.\n";
+            if ( first - second < 0.1 )
+            {
+                cout << "But they are almost equal. Difference is: " << first - second << '\n';
+            }
         }
         else
         {
