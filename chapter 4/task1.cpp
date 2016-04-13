@@ -16,9 +16,9 @@ int main()
         {
             cout << first << " is least.\n";
             cout << second << " is most.\n";
-            if ( second - first < 0.1)
+            if ( second - first < 0.1 )
             {
-                cout << "But they are almost equal. Difference is: " << second - first << "\n";
+                cout << "But they are almost equal. Difference is: " << second - first << '\n';
             }
 
         }
@@ -26,9 +26,9 @@ int main()
         {
             cout << second << " is least.\n";
             cout << first << " is most.\n";
-            if ( first - second < 0.1)
+            if ( first - second < 0.1 )
             {
-                cout << "But they are almost equal. Difference is: " << first - second << "\n";
+                cout << "But they are almost equal. Difference is: " << first - second << '\n';
             }
         }
         else
