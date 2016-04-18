@@ -45,6 +45,7 @@ void convert(double& number, const int& unit_index)
             number *= ft_in;
             // ACHTUNG: No break!! Now we need to convert inches to centimiters
             // after converting feets to inches.
+            [[fallthrough]]
         case 2:
             number *= in_cm;
             break;
